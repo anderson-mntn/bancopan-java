@@ -9,13 +9,14 @@ public class Fila {
         return refNoEntradaFila == null ? true : false;
     }
     
-    public void enqueue(No novoNo){
+    public void enqueue(Object obj){
+        No novoNo = new No(obj);
         novoNo.setRefNo(refNoEntradaFila);
         refNoEntradaFila = novoNo;
     }
 
     // .first() vai retornar o primeiro nó da fila
-    public No first(){  
+    public Object first(){  
         if(!this.isEmpty()){
             No primeiroNo = refNoEntradaFila;
             while(true){
@@ -25,13 +26,13 @@ public class Fila {
                     break;
                 }
             } 
-            return primeiroNo;
+            return primeiroNo.getObject();
         }
         return null;
     } 
 
     //dequeue - pegar o imediatamente anterior e apontar para null
-    public No dequeue(){  
+    public Object dequeue(){  
         if(!this.isEmpty()){
             No primeiroNo = refNoEntradaFila;
             No noAuxiliar = refNoEntradaFila;
@@ -44,7 +45,7 @@ public class Fila {
                     break;
                 }
             } 
-            return primeiroNo;
+            return primeiroNo.getObject();
         }
         return null;
     }
