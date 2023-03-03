@@ -20,11 +20,12 @@ public class Fila {
             No primeiroNo = refNoEntradaFila;
             while(true){
                 if(primeiroNo.getRefNo() != null){
-                    primeiroNo = primeiroNo.getRefNo();
+                   primeiroNo = primeiroNo.getRefNo();
                 } else {
                     break;
                 }
             } 
+            return primeiroNo;
         }
         return null;
     } 

@@ -10,7 +10,15 @@ public class App {
 
         System.out.println(minhaFila2);
 
-        System.out.println(minhaFila2.dequeue());
+        System.out.println(minhaFila2.dequeue()); //tira da fila
 
+        System.out.println(minhaFila2);
+
+        minhaFila2.enqueue(new No("ultimo"));
+
+        System.out.println(minhaFila2);
+
+        System.out.println("current first: " + minhaFila2.first());
+        
     }
 }
