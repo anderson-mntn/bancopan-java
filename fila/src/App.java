@@ -1,12 +1,12 @@
 public class App {
     public static void main(String[] args) throws Exception {
         
-        Fila minhaFila2 = new Fila();
+        Fila<String> minhaFila2 = new Fila<String>();
 
-        minhaFila2.enqueue(new No("primeiro nó"));
-        minhaFila2.enqueue(new No("segundo nó"));
-        minhaFila2.enqueue(new No("terceiro nó"));
-        minhaFila2.enqueue(new No("quarto nó"));
+        minhaFila2.enqueue("primeiro nó");
+        minhaFila2.enqueue("segundo nó");
+        minhaFila2.enqueue("terceiro nó");
+        minhaFila2.enqueue("quarto nó");
 
         System.out.println(minhaFila2);
 
@@ -14,7 +14,7 @@ public class App {
 
         System.out.println(minhaFila2);
 
-        minhaFila2.enqueue(new No("ultimo"));
+        minhaFila2.enqueue("ultimo");
 
         System.out.println(minhaFila2);
 
