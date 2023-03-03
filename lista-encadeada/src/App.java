@@ -16,8 +16,10 @@ public class App {
         System.out.println(minhaListaEnc1.get(2));
         System.out.println(minhaListaEnc1.get(3));
 
-        System.out.println("????"+minhaListaEnc1.toStringHandmade());
+        System.out.println(minhaListaEnc1.toStringHandmade());
         minhaListaEnc1.remove(2);
-        System.out.println("||||" + minhaListaEnc1.toStringHandmade());
+        System.out.println(minhaListaEnc1.toStringHandmade());
+        minhaListaEnc1.add("ultimo index"); //Podemos aplicar polimorfismo para fazer index, e novo conteudo.
+        System.out.println(minhaListaEnc1.toStringHandmade());
     }
 }
