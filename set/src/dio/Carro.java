@@ -49,7 +49,7 @@ public class Carro implements Comparable<Carro>{
     public int compareTo(Carro o) {
         if (this.marca.length() < o.marca.length()){
             return -1;
-        } else if (this.marca.length() > o.marca.length() ) {
+        } else if (this.marca.length() >= o.marca.length()){
             return 1;
         } 
         return 0;

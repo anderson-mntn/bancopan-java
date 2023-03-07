@@ -20,10 +20,11 @@ public class Main {
         Set<Carro> treeSetCarros = new TreeSet<>();
 
         treeSetCarros.add(new Carro("Ford"));
+        treeSetCarros.add(new Carro("Alfa Romeo"));
         treeSetCarros.add(new Carro("Fiat"));
         treeSetCarros.add(new Carro("Peugeot"));
         treeSetCarros.add(new Carro("Porsche"));
-        treeSetCarros.add(new Carro("Alfa Romeo"));
+        treeSetCarros.add(new Carro("Zip"));
 
         System.out.println(treeSetCarros); // Vai dar erro, precisamos implementar comparable na class Carro
     }  
