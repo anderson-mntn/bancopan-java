@@ -45,19 +45,23 @@ public class Carro implements Comparable<Carro>{
         return "Carro [marca=" + marca + "]";
     }
 
+    // compareTo por ordem do tamanho da string (menor p/ maior)
+    // @Override
+    // public int compareTo(Carro o) {
+    //     if (this.marca.length() < o.marca.length()){
+    //         return -1;
+    //     } else if (this.marca.length() >= o.marca.length()){
+    //         return 1;
+    //     } 
+    //     return 0;
+    //     //Agora o add do set insere por ordem do tamanho da string.
+    // }
+    
+    //compareTo por rdem alfabética
     @Override
-    public int compareTo(Carro o) {
-        if (this.marca.length() < o.marca.length()){
-            return -1;
-        } else if (this.marca.length() >= o.marca.length()){
-            return 1;
-        } 
-        return 0;
-        //Agora o add do set insere por ordem do tamanho da string.
+    public int compareTo(Carro o){
+        return this.getMarca().compareTo(o.getMarca());
     }
-    
-
-    
 
     
 }
